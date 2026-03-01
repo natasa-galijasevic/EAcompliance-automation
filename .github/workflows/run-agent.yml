@@ -1,4 +1,3 @@
-</> YAML
 name: Run Compliance Agent
 
 on:
@@ -9,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - name:Chekout repository
+      - name: Chekout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -17,8 +16,8 @@ jobs:
         with: 
           python-version: '3.10'
           
-        - name: Install dependencies
-          run: pip install -r requirements
+      - name: Install dependencies
+        run: pip install -r requirements
 
-        - name: Run agent
-          run: python EAagent.py
+      - name: Run agent
+        run: python EAagent.py
