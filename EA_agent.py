@@ -12,10 +12,10 @@ response = requests.get(
   auth=HTTPBasicAuth(email, api_token)
   )
 if response.status_code == 200:
-    page = response.json()
+   # page = response.json()
     title = page["title"]
     content = page["body"]["storage"]["value"]
     print(f"Page title: {title}\n")
-    print(f"Content (prvoh 500 karaktera):\n{content[:500]}...")
+    print(f"Content (prvoh 300 karaktera):\n{content[:500]}...")
 else:
     print(f"Failed to fetch page: {response.status_code} - {response.text}")
