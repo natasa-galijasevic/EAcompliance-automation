@@ -19,4 +19,4 @@ run-agent:
       run: pip install -r requirements
 
   -name: Run agent
-    run: python EAcompliance-agent.py
+    run: python EAagent.py
