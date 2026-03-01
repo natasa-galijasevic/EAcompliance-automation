@@ -1,22 +1,24 @@
 </> YAML
 name: Run Compliance Agent
+
 on:
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
-run-agent:
-  runs-on: ubuntu-latest
+  run-agent:
+    runs-on: ubuntu-latest
   
-  steps:
-    -name:Chekout repository
-      uses: actions/checkout@v4
+    steps:
+      - name:Chekout repository
+        uses: actions/checkout@v4
 
-    -name: Set up Python
-      uses: actions/setup-python@4v
-  with: 
-      python-version: '3.10'
-    -name: Install dependencies
-      run: pip install -r requirements
+      - name: Set up Python
+        uses: actions/setup-python@4v
+        with: 
+          python-version: '3.10'
+          
+        - name: Install dependencies
+          run: pip install -r requirements
 
-  -name: Run agent
-    run: python EAagent.py
+        - name: Run agent
+          run: python EAagent.py
