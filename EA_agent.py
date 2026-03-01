@@ -1,10 +1,11 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-base_url=""
-page_id=""
+base_url="https://wiki.rbinternational.com/"
+page_id="5330309263"
 email ="natasa.galijasevic.raiffeisengroup.ba"
-api_tokem = ""
+import os
+api_token=os.environ.get("ConfluenceToken")
 
 response = requests.get(
   f"{base_url}/{page_id}?expand=body.storage",
