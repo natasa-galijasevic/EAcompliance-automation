@@ -14,7 +14,7 @@ response = requests.get(
   if response.status_code == 200:
     page = response.json()
     title = page["title"]
-  content = page["body"]["storage"]["value"]
+    content = page["body"]["storage"]["value"]
     print(f"Page title: {title}\n")
     print(f"Content (prvoh 500 karaktera):\n{content[:500]}...")
   else:
