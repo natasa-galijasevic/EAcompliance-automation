@@ -1,1 +1,2 @@
 requests
+atlassian-python-api
