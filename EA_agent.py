@@ -1,9 +1,9 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-base_url="https://wiki.rbinternational.com/"
+base_url="https://wiki.rbinternational.com/confluence/rest/api/content"
 page_id="5330309263"
-email ="natasa.galijasevic.raiffeisengroup.ba"
+email ="natasa.galijasevic@raiffeisengroup.ba"
 import os
 api_token=os.environ.get("ConfluenceToken")
 
