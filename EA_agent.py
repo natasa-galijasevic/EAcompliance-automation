@@ -3,7 +3,7 @@ from atlassian import Confluence
 
 url = "https://wiki.rbinternational.com/confluence"
 username = "natasa.galijasevic@raiffeisengroup.ba"   # PAT zahtijeva e-mail
-token = "ConfluenceToken"                             # pravi Confluence API token
+password = "ConfluenceToken"                             # pravi Confluence API token
 
 confluence = Confluence(
     url=url,
